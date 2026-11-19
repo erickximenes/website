@@ -1,645 +1,763 @@
-<!DOCTYPE HTML>
-<html lang="pt">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Erick Vasconcelos</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Erick Ximenes Vasconcelos · Engenheiro de Software</title>
 	<meta name="description"
-		content="Erick Vasconcelos - Desenvolvedor Full-Stack especializado em Flutter, NodeJS, TypeScript e Python. Software Engineer com experiência em desenvolvimento mobile e web." />
+		content="Erick Ximenes Vasconcelos: engenheiro de software full-stack e mobile, sócio da RBS Data. Node.js, NestJS, TypeScript, Flutter, AWS e IA aplicada. Liderou o desenvolvimento do CAF no Ministério da Agricultura." />
 	<meta name="keywords"
-		content="Erick Ximenes Vasconcelos, desenvolvedor full-stack, flutter, nodejs, typescript, javascript, python, desenvolvimento mobile, software engineer, AWS, docker, mongodb, mysql" />
-	<meta name="author" content="Erick Vasconcelos" />
+		content="Erick Ximenes Vasconcelos, engenheiro de software, desenvolvedor full-stack, flutter, nodejs, nestjs, typescript, react, nextjs, python, aws, docker, postgresql, inteligência artificial, RAG, RBS Data, Macapá" />
+	<meta name="author" content="Erick Ximenes Vasconcelos" />
+	<meta name="theme-color" content="#0b0f17" />
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
 	<link rel="icon" href="images/icon.ico" type="image/x-icon" />
 
-	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="Erick Vasconcelos" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Erick Ximenes Vasconcelos · Engenheiro de Software" />
+	<meta property="og:description" content="Full-stack, mobile e IA aplicada. Sócio da RBS Data." />
 	<meta property="og:image" content="https://i.imgur.com/eG9Sq3D.png" />
 	<meta property="og:url" content="https://erickximenes.github.io/website" />
-	<meta property="og:site_name" content="Erick Vasconcelos" />
-	<meta property="og:description" content="Conheça mais sobre mim" />
-
-	<meta name="twitter:title" content="Conheça mais sobre mim" />
-	<meta name="twitter:image" content="https://i.imgur.com/eG9Sq3D.png" />
-	<meta name="twitter:url" content="https://erickximenes.github.io/website" />
+	<meta property="og:site_name" content="Erick Ximenes Vasconcelos" />
 	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Erick Ximenes Vasconcelos · Engenheiro de Software" />
+	<meta name="twitter:image" content="https://i.imgur.com/eG9Sq3D.png" />
 
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Erick Ximenes Vasconcelos",
+		"jobTitle": "Engenheiro de Software",
+		"worksFor": { "@type": "Organization", "name": "RBS Data", "url": "https://rbsdata.com.br/" },
+		"address": { "@type": "PostalAddress", "addressLocality": "Macapá", "addressRegion": "AP", "addressCountry": "BR" },
+		"url": "https://erickximenes.github.io/website",
+		"sameAs": [
+			"https://www.linkedin.com/in/erick-vasconcelos-50baa8150/",
+			"https://github.com/erickximenes"
+		]
+	}
+	</script>
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+	<style>
+		:root {
+			--bg: #0b0f17;
+			--bg-2: #111725;
+			--card: #141b2b;
+			--card-hover: #182134;
+			--border: #232d42;
+			--text: #e6ebf5;
+			--muted: #9aa6bd;
+			--accent: #38bdf8;
+			--accent-2: #818cf8;
+			--accent-soft: rgba(56, 189, 248, .12);
+			--ok: #34d399;
+			--radius: 16px;
+			--maxw: 1120px;
+		}
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+		*,
+		*::before,
+		*::after { box-sizing: border-box; }
 
+		html { scroll-behavior: smooth; }
+
+		body {
+			margin: 0;
+			font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+			background: var(--bg);
+			color: var(--text);
+			line-height: 1.65;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		a { color: inherit; text-decoration: none; }
+		img { max-width: 100%; display: block; }
+
+		.container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+		.mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+
+		/* ---------- Nav ---------- */
+		.nav {
+			position: sticky; top: 0; z-index: 50;
+			background: rgba(11, 15, 23, .75);
+			backdrop-filter: blur(12px);
+			-webkit-backdrop-filter: blur(12px);
+			border-bottom: 1px solid transparent;
+			transition: border-color .2s;
+		}
+		.nav.scrolled { border-color: var(--border); }
+		.nav .container { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
+		.brand { font-weight: 800; letter-spacing: -.02em; font-size: 18px; }
+		.brand span { color: var(--accent); }
+		.nav-links { display: flex; gap: 26px; list-style: none; margin: 0; padding: 0; }
+		.nav-links a { color: var(--muted); font-size: 14px; font-weight: 500; transition: color .15s; }
+		.nav-links a:hover { color: var(--text); }
+		.nav-actions { display: flex; align-items: center; gap: 10px; }
+		.lang-btn {
+			background: transparent; color: var(--text); border: 1px solid var(--border);
+			border-radius: 999px; padding: 6px 12px; font: 600 12px "JetBrains Mono", monospace; cursor: pointer;
+		}
+		.lang-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+		/* ---------- Buttons ---------- */
+		.btn {
+			display: inline-flex; align-items: center; gap: 8px;
+			padding: 12px 20px; border-radius: 12px; font-weight: 600; font-size: 15px;
+			border: 1px solid var(--border); transition: transform .15s, background .15s, border-color .15s;
+		}
+		.btn:hover { transform: translateY(-2px); }
+		.btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #06101d; border: none; }
+		.btn-ghost { background: var(--card); }
+		.btn-ghost:hover { border-color: var(--accent); }
+		.btn svg { width: 18px; height: 18px; }
+		.btn-sm { padding: 8px 14px; font-size: 13px; border-radius: 10px; }
+
+		/* ---------- Hero ---------- */
+		.hero { position: relative; padding: 96px 0 80px; overflow: hidden; }
+		.hero::before {
+			content: ""; position: absolute; inset: -40% -10% auto auto; width: 720px; height: 720px;
+			background: radial-gradient(circle, rgba(129, 140, 248, .22), transparent 60%); pointer-events: none;
+		}
+		.hero::after {
+			content: ""; position: absolute; inset: auto auto -50% -15%; width: 640px; height: 640px;
+			background: radial-gradient(circle, rgba(56, 189, 248, .16), transparent 60%); pointer-events: none;
+		}
+		.hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.4fr 1fr; gap: 56px; align-items: center; }
+		.badge {
+			display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px;
+			background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 600; margin-bottom: 22px;
+		}
+		.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ok); box-shadow: 0 0 0 4px rgba(52, 211, 153, .2); }
+		.hero h1 { font-size: clamp(36px, 6vw, 60px); line-height: 1.08; letter-spacing: -.035em; margin: 0 0 18px; font-weight: 800; }
+		.grad { background: linear-gradient(135deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+		.hero .lead { font-size: clamp(16px, 2vw, 19px); color: var(--muted); max-width: 600px; margin: 0 0 30px; }
+		.hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 30px; }
+		.socials { display: flex; gap: 10px; }
+		.socials a {
+			width: 42px; height: 42px; display: grid; place-items: center; border-radius: 12px;
+			background: var(--card); border: 1px solid var(--border); color: var(--muted); transition: all .15s;
+		}
+		.socials a:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); }
+		.socials svg { width: 19px; height: 19px; }
+
+		.profile-card {
+			background: linear-gradient(180deg, var(--card), var(--bg-2)); border: 1px solid var(--border);
+			border-radius: 24px; padding: 28px; text-align: center; box-shadow: 0 30px 80px -30px rgba(0, 0, 0, .7);
+		}
+		.avatar {
+			width: 168px; height: 168px; border-radius: 50%; margin: 0 auto 18px; object-fit: cover;
+			border: 3px solid transparent;
+			background: linear-gradient(var(--card), var(--card)) padding-box, linear-gradient(135deg, var(--accent), var(--accent-2)) border-box;
+		}
+		.profile-card h2 { margin: 0; font-size: 20px; letter-spacing: -.01em; }
+		.profile-card .role { color: var(--muted); font-size: 14px; margin: 4px 0 18px; }
+		.meta { list-style: none; padding: 0; margin: 0; text-align: left; display: grid; gap: 10px; }
+		.meta li { display: flex; gap: 10px; align-items: center; font-size: 14px; color: var(--muted); padding: 10px 12px; background: rgba(255, 255, 255, .02); border: 1px solid var(--border); border-radius: 10px; }
+		.meta svg { width: 16px; height: 16px; color: var(--accent); flex-shrink: 0; }
+		.meta a:hover { color: var(--text); }
+
+		/* ---------- Stats ---------- */
+		.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 64px; position: relative; z-index: 1; }
+		.stat { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; }
+		.stat b { display: block; font-size: 30px; letter-spacing: -.03em; font-weight: 800; }
+		.stat span { color: var(--muted); font-size: 14px; }
+
+		/* ---------- Sections ---------- */
+		section { padding: 88px 0; }
+		section.alt { background: var(--bg-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+		.eyebrow { color: var(--accent); font: 600 13px "JetBrains Mono", monospace; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 10px; }
+		.section-title { font-size: clamp(28px, 4vw, 40px); letter-spacing: -.03em; margin: 0 0 14px; font-weight: 800; line-height: 1.15; }
+		.section-sub { color: var(--muted); max-width: 680px; margin: 0 0 48px; font-size: 17px; }
+
+		.about-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; }
+		.about-grid p { color: var(--muted); margin: 0 0 16px; font-size: 16.5px; }
+		.about-grid p strong { color: var(--text); font-weight: 600; }
+		.highlights { display: grid; gap: 12px; }
+		.hl { display: flex; gap: 14px; padding: 16px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; }
+		.hl .ico { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); flex-shrink: 0; }
+		.hl .ico svg { width: 20px; height: 20px; }
+		.hl h4 { margin: 0 0 2px; font-size: 15px; }
+		.hl p { margin: 0; font-size: 14px; color: var(--muted); }
+
+		/* ---------- Cards ---------- */
+		.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+		.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+		.card {
+			background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px;
+			transition: border-color .2s, transform .2s, background .2s;
+		}
+		.card:hover { border-color: rgba(56, 189, 248, .45); transform: translateY(-3px); background: var(--card-hover); }
+		.card .ico { width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); margin-bottom: 18px; }
+		.card .ico svg { width: 22px; height: 22px; }
+		.card h3 { margin: 0 0 8px; font-size: 18px; letter-spacing: -.01em; }
+		.card p { margin: 0; color: var(--muted); font-size: 15px; }
+
+		.project { display: flex; flex-direction: column; }
+		.project .tag-top { font: 600 12px "JetBrains Mono", monospace; color: var(--accent-2); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 10px; }
+		.project p { flex: 1; }
+		.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+		.chip { font: 500 12.5px "JetBrains Mono", monospace; padding: 5px 10px; border-radius: 8px; background: rgba(255, 255, 255, .04); border: 1px solid var(--border); color: #c9d3e6; }
+		.project .link { margin-top: 18px; color: var(--accent); font-weight: 600; font-size: 14px; display: inline-flex; gap: 6px; align-items: center; }
+		.project .link:hover { text-decoration: underline; }
+
+		/* ---------- Skills ---------- */
+		.skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+		.skill-group h3 { display: flex; align-items: center; gap: 10px; font-size: 16px; margin: 0 0 14px; }
+		.skill-group h3 svg { width: 18px; height: 18px; color: var(--accent); }
+		.skill-group .chip.core { border-color: rgba(56, 189, 248, .5); color: var(--text); background: var(--accent-soft); }
+		.legend { color: var(--muted); font-size: 13px; margin-top: 18px; display: flex; align-items: center; gap: 8px; }
+		.legend .chip { padding: 2px 8px; }
+
+		/* ---------- Timeline ---------- */
+		.timeline { position: relative; margin: 0; padding: 0; list-style: none; }
+		.timeline::before { content: ""; position: absolute; left: 11px; top: 6px; bottom: 6px; width: 2px; background: linear-gradient(var(--accent), var(--accent-2), transparent); }
+		.tl-item { position: relative; padding: 0 0 34px 44px; }
+		.tl-item::before {
+			content: ""; position: absolute; left: 4px; top: 6px; width: 16px; height: 16px; border-radius: 50%;
+			background: var(--bg); border: 3px solid var(--accent);
+		}
+		.tl-item.current::before { background: var(--accent); box-shadow: 0 0 0 5px var(--accent-soft); }
+		.tl-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: baseline; }
+		.tl-item h3 { margin: 0; font-size: 18px; letter-spacing: -.01em; }
+		.tl-date { font: 500 13px "JetBrains Mono", monospace; color: var(--muted); white-space: nowrap; }
+		.tl-company { color: var(--accent); font-weight: 600; font-size: 15px; margin: 2px 0 8px; }
+		.tl-item p { margin: 0; color: var(--muted); font-size: 15px; max-width: 760px; }
+		.tl-item .chips { margin-top: 12px; }
+
+		.edu { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+		.edu .card h3 { font-size: 16px; }
+		.edu .tl-date { display: block; margin-bottom: 8px; }
+
+		/* ---------- Contact ---------- */
+		.contact-box {
+			position: relative; overflow: hidden; border-radius: 24px; padding: 56px 40px; text-align: center;
+			background: linear-gradient(135deg, rgba(56, 189, 248, .14), rgba(129, 140, 248, .14)), var(--card);
+			border: 1px solid var(--border);
+		}
+		.contact-box h2 { font-size: clamp(28px, 4vw, 42px); letter-spacing: -.03em; margin: 0 0 12px; }
+		.contact-box p { color: var(--muted); max-width: 600px; margin: 0 auto 28px; font-size: 17px; }
+		.contact-box .hero-cta { justify-content: center; margin: 0; }
+
+		footer { padding: 36px 0; color: var(--muted); font-size: 14px; }
+		footer .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+
+		/* ---------- Reveal ---------- */
+		.reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+		.reveal.in { opacity: 1; transform: none; }
+		@media (prefers-reduced-motion: reduce) {
+			.reveal { opacity: 1; transform: none; transition: none; }
+			html { scroll-behavior: auto; }
+		}
+
+		/* ---------- Responsive ---------- */
+		@media (max-width: 960px) {
+			.hero-grid, .about-grid { grid-template-columns: 1fr; }
+			.profile-card { max-width: 420px; }
+			.grid-3, .skills, .edu { grid-template-columns: repeat(2, 1fr); }
+			.stats { grid-template-columns: repeat(2, 1fr); }
+			.nav-links { display: none; }
+		}
+		@media (max-width: 620px) {
+			.container { padding: 0 16px; }
+			.hero { padding: 56px 0 56px; }
+			section { padding: 64px 0; }
+			.grid-3, .grid-2, .skills, .edu { grid-template-columns: 1fr; }
+			.contact-box { padding: 40px 20px; }
+			.nav-actions .btn { display: none; }
+		}
+	</style>
 </head>
 
 <body>
 
-	<div class="fh5co-loader"></div>
+	<!-- SVG icon sprite -->
+	<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+		<defs>
+			<symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+			<symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></symbol>
+			<symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm18 2-10 7L2 6"/></symbol>
+			<symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+			<symbol id="i-briefcase" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+			<symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></g></symbol>
+			<symbol id="i-server" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></g></symbol>
+			<symbol id="i-phone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></g></symbol>
+			<symbol id="i-layout" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></g></symbol>
+			<symbol id="i-cloud" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></symbol>
+			<symbol id="i-cpu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></g></symbol>
+			<symbol id="i-db" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></g></symbol>
+			<symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+			<symbol id="i-refresh" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></symbol>
+			<symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></g></symbol>
+			<symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></symbol>
+			<symbol id="i-download" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+		</defs>
+	</svg>
 
-	<div id="page">
-		<!-- Language Toggle Button -->
-		<div class="language-toggle">
-			<button id="language-btn" class="btn-language" onclick="toggleLanguage()">
-				<span id="language-text">EN</span>
-			</button>
-		</div>
-		
-		<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner"
-			style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center">
-						<div class="display-t js-fullheight">
-							<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-								<div class="profile-thumb" style="background: url(images/user-3.jpg);"></div>
-								<h1><span>Erick X. Vasconcelos</span></h1>
-								<h3><span data-i18n="header.title">Dev. Mobile / Dev. Full-Stack</span></h3>
-								<p>
-								<ul class="fh5co-social-icons">
-									<!-- <li><a href="#"><i class="icon-twitter2"></i></a></li> -->
-									<li><a href="https://www.facebook.com/erick.ximenes77"><i
-												class="icon-facebook2"></i></a></li>
-									<li><a href="https://www.linkedin.com/in/erick-vasconcelos-50baa8150/"><i
-												class="icon-linkedin2"></i></a></li>
-									<!-- <li><a href="#"><i class="icon-dribbble2"></i></a></li> -->
-								</ul>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<div id="fh5co-about" class="animate-box">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2 data-i18n="about.title">Sobre mim</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<ul class="info">
-							<li><span class="first-block" data-i18n="about.name">Nome:</span><span class="second-block">Erick
-									Vasconcelos</span></li>
-							<!-- <li><span class="first-block">Telefone:</span><span class="second-block">+ 1235 2355 98</span></li> -->
-							<li><span class="first-block" data-i18n="about.email">Email:</span><span
-									class="second-block">erick_vasconcelos_contato@outlook.com</span></li>
-							<li><span class="first-block" data-i18n="about.website">Website:</span><span
-									class="second-block">erickximenes.github.io/website</span></li>
-							<!-- <li><span class="first-block">Address:</span><span class="second-block">198 West 21th Street, Suite 721 New York NY 10016</span></li> -->
-						</ul>
-					</div>
-					<div class="col-md-8">
-						<h2 data-i18n="about.hello">Hello There!</h2>
-						<p data-i18n="about.description1">Desenvolvedor Full Stack especializado em Node.js e Flutter, com uma paixão particular pelo backend. Com uma sólida formação em TypeScript, JavaScript e Python, sou comprometido com a entrega de soluções de alta qualidade, seguindo as melhores práticas de desenvolvimento, como TDD e clean code. Possuo experiência significativa em frameworks como AdonisJS e NuxtJS, o que me permite criar sistemas web escaláveis e eficientes. Além disso, como desenvolvedor mobile em Flutter, tenho experiência em criar aplicativos elegantes e funcionais. Meu conhecimento abrange diversos bancos de dados, incluindo MySQL, MongoDB e PostgreSQL, e sou capaz de integrar essas tecnologias de forma eficaz em meus projetos.</p>
-						<p data-i18n="about.description2">Tenho experiência consolidada em migração de sistemas legados para novas plataformas, incluindo migração de dados entre diferentes bancos de dados (MySQL, MongoDB, PostgreSQL) e transferência de arquivos entre sistemas de armazenamento distintos, como storage on-premise para nuvem. Essa expertise me permite modernizar aplicações antigas, garantindo integridade dos dados e continuidade operacional durante o processo de transição.</p>
-						<p data-i18n="about.description3">Trabalho com serviços em nuvem, como Firebase e AWS, para fornecer soluções modernas e escaláveis. Sempre em busca de desafios estimulantes e oportunidades para continuar crescendo como desenvolvedor Full Stack. Let's code!</p>
-						<p>
-						<ul class="fh5co-social-icons">
-							<!-- <li><a href="#"><i class="icon-twitter2"></i></a></li> -->
-							<li><a href="https://www.facebook.com/erick.ximenes77"><i class="icon-facebook2"></i></a>
-							</li>
-							<li><a href="https://www.linkedin.com/in/erick-vasconcelos-50baa8150/"><i
-										class="icon-linkedin2"></i></a></li>
-							<!-- <li><a href="#"><i class="icon-dribbble2"></i></a></li> -->
-						</ul>
-						</p>
-					</div>
-				</div>
+	<!-- ================= NAV ================= -->
+	<nav class="nav" id="nav">
+		<div class="container">
+			<a href="#top" class="brand">erick<span>.</span>ximenes</a>
+			<ul class="nav-links">
+				<li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+				<li><a href="#servicos" data-i18n="nav.services">Serviços</a></li>
+				<li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
+				<li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+				<li><a href="#experiencia" data-i18n="nav.experience">Experiência</a></li>
+			</ul>
+			<div class="nav-actions">
+				<button class="lang-btn" id="lang-btn" type="button" aria-label="Mudar idioma">EN</button>
+				<a href="#contato" class="btn btn-primary btn-sm" data-i18n="nav.contact">Fale comigo</a>
 			</div>
 		</div>
+	</nav>
 
-		<div id="fh5co-resume" class="fh5co-bg-color">
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2 data-i18n="resume.title">Meu Resumo</h2>
+	<!-- ================= HERO ================= -->
+	<header class="hero" id="top">
+		<div class="container">
+			<div class="hero-grid">
+				<div class="reveal">
+					<div class="badge"><span class="dot"></span><span data-i18n="hero.badge">Aberto a novos projetos e oportunidades</span></div>
+					<h1><span data-i18n="hero.hi">Olá, sou Erick.</span><br><span class="grad" data-i18n="hero.title">Construo software que roda em produção.</span></h1>
+					<p class="lead" data-i18n="hero.lead">Engenheiro de software full-stack e mobile, sócio da <strong>RBS Data</strong>. Liderei o desenvolvimento do <strong>CAF no Ministério da Agricultura</strong> e entrego sistemas de ponta a ponta: APIs em Node.js/NestJS, apps Flutter publicados nas lojas, infraestrutura na AWS e IA aplicada.</p>
+					<div class="hero-cta">
+						<a href="#contato" class="btn btn-primary"><svg><use href="#i-mail" /></svg><span data-i18n="hero.cta1">Vamos conversar</span></a>
+						<a href="#projetos" class="btn btn-ghost"><span data-i18n="hero.cta2">Ver projetos</span><svg><use href="#i-arrow" /></svg></a>
+					</div>
+					<div class="socials">
+						<a href="https://www.linkedin.com/in/erick-vasconcelos-50baa8150/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-linkedin" /></svg></a>
+						<a href="https://github.com/erickximenes" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-github" /></svg></a>
+						<a href="https://rbsdata.com.br/" target="_blank" rel="noopener" aria-label="RBS Data"><svg><use href="#i-globe" /></svg></a>
+						<a href="mailto:erick_vasconcelos_contato@outlook.com" aria-label="E-mail"><svg><use href="#i-mail" /></svg></a>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-12 col-md-offset-0">
-						<ul class="timeline">
-							<li class="timeline-heading text-center animate-box">
-								<div>
-									<h3 data-i18n="resume.work_experience">Experiência de trabalho</h3>
-								</div>
-							</li>
 
-							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Estagiário</h3>
-										<span class="company">SEED - Secretaria de Estado da Educação do Amapá - 2018 -
-											2018</span>
-									</div>
-									<div class="timeline-body">
-										<p data-i18n="work.internship.description">Estágio voluntário na Secretaria de Estado da Educação do Amapá.</p>
-									</div>
-								</div>
-							</li>
+				<aside class="profile-card reveal">
+					<img class="avatar" src="images/user-3.jpg" alt="Foto de Erick Ximenes Vasconcelos" width="168" height="168">
+					<h2>Erick Ximenes Vasconcelos</h2>
+					<p class="role" data-i18n="card.role">Engenheiro de Software · Full-Stack & Mobile</p>
+					<ul class="meta">
+						<li><svg><use href="#i-briefcase" /></svg><span data-i18n="card.company">Sócio · Engenharia de Software na <a href="https://rbsdata.com.br/" target="_blank" rel="noopener"><strong>RBS Data</strong></a></span></li>
+						<li><svg><use href="#i-pin" /></svg><span data-i18n="card.location">Macapá, AP · Brasil (remoto)</span></li>
+						<li><svg><use href="#i-mail" /></svg><a href="mailto:erick_vasconcelos_contato@outlook.com">erick_vasconcelos_contato@outlook.com</a></li>
+					</ul>
+				</aside>
+			</div>
 
-							<li class="animate-box timeline-unverted">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Estagiário de T.I</h3>
-										<span class="company">Cunha & Tavares Contabilidade S/S - 2019 - 2019</span>
-									</div>
-									<div class="timeline-body">
-										<p data-i18n="work.it_intern.description">Exercendo as funções de desenvolvedor, infra e suporte.</p>
-									</div>
-								</div>
-							</li>
-							<li class="animate-box timeline-unverted">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Desenvolvedor de Sistemas</h3>
-										<span class="company">Cunha & Tavares Contabilidade S/S - 2019 - 2022</span>
-									</div>
-									<div class="timeline-body">
-										<p data-i18n="work.systems_developer.description">Exerço o papel de desenvolvedor de sistemas, trabalhando com tecnologias JS
-											(ReactJS, NodeJS, AdonisJS e VueJS), desenvolvimento mobile usando Flutter e
-											implementando Docker, Git, MySQL, entre outros.</p>
-									</div>
-								</div>
-							</li>
-							<li class="animate-box timeline-unverted">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Desenvolvedor de Sistemas e Gestor de T.I</h3>
-										<span class="company">Cunha & Tavares Contabilidade S/S - 2022 - 2023</span>
-									</div>
-									<div class="timeline-body">
-										<p data-i18n="work.systems_manager.description">Exerço o papel de desenvolvedor de sistemas e também como gestor de T.I,
-											trabalhando com tecnologias JS (ReactJS, NodeJS, AdonisJS e VueJS),
-											desenvolvimento mobile usando Flutter e implementando Docker, Git, MySQL,
-											entre outros.</p>
-									</div>
-								</div>
-							</li>
-							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Desenvolvedor Mobile Senior</h3>
-										<span class="company">WashPass 2023 - Atualmente</span>
-									</div>
-									<div class="timeline-body">
-										<p data-i18n="work.mobile_senior.description">Atuo como desenvolvedor mobile Android/IOS/Web utilizando Flutter e
-											desenvolvedor Full-Stack utilizando NodeJS.</p>
-									</div>
-								</div>
-							</li>
-							<li class="animate-box timeline-unverted">
-								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Software Engineer Senior</h3>
-										<span class="company">Global Hitss - 2023 - Atualmente</span>
-									</div>
-									<div class="timeline-body">
-										<p data-i18n="work.software_engineer.description">Exerci a função de Software Engineer FullStack em NodeJS.</p>
-									</div>
-								</div>
-							</li>
-
-							<br>
-							<li class="timeline-heading text-center animate-box">
-								<div>
-									<h3 data-i18n="resume.education">Educação</h3>
-								</div>
-							</li>
-							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Docência do Ensino Superior</h3>
-										<span class="company">Faculdade de Tecnologia do Amapá META - 2020 - 2020</span>
-									</div>
-									<div class="timeline-body">
-										<p data-i18n="education.higher_education.description">O curso capacite o profissional a ser especialista na prática: professor,
-											aluno e a aprendizagem do século 21, a partir de reflexões sobre
-											experiências profissionais, da pesquisa e do exercício crítico de elaboração
-											de um plano de trabalho docente adequado às exigências do ensino superior
-											contemporâneo.</p>
-									</div>
-								</div>
-							</li>
-							<li class="animate-box timeline-unverted">
-								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Tecnologia em Redes de Computadores</h3>
-										<span class="company">Faculdade de Tecnologia do Amapá META - 2017 - 2019</span>
-									</div>
-									<div class="timeline-body">
-										<p data-i18n="education.computer_networks.description">O curso capacita o profissional a ser especialista em projetar, configurar,
-											fazer a manutenção, gerenciar e cuidar da segurança de redes de computadores
-											e infraestruturas de Tecnologia da Informação (TI).</p>
-									</div>
-								</div>
-							</li>
-							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Aprendizagem Industrial - Redes de Computadores</h3>
-										<span class="company">SENAI AP - 2016 - 2016</span>
-									</div>
-									<div class="timeline-body">
-										<p data-i18n="education.industrial_learning.description">Habilitar profissionais para implementar e manter infraestrutura,
-											equipamentos de acesso, sistemas operacionais e serviços de redes, aplicando
-											normas de segurança de rede e padrões técnicos, de acordo com normas de
-											qualidade, de saúde e segurança do trabalho e preservação ambiental.</p>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
+			<div class="stats">
+				<div class="stat reveal"><b class="grad">7+</b><span data-i18n="stats.years">anos desenvolvendo software</span></div>
+				<div class="stat reveal"><b class="grad">Gov.</b><span data-i18n="stats.gov">sistemas federais em produção</span></div>
+				<div class="stat reveal"><b class="grad">iOS + Android</b><span data-i18n="stats.apps">apps publicados nas lojas</span></div>
+				<div class="stat reveal"><b class="grad">AWS · IA</b><span data-i18n="stats.partners">RBS Data: parceira AWS, OpenAI e Anthropic</span></div>
 			</div>
 		</div>
+	</header>
 
-
-		<div id="fh5co-features" class="animate-box">
-			<div class="container">
-				<div class="services-padding">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-							<h2 data-i18n="services.title">Meus serviços</h2>
+	<!-- ================= SOBRE ================= -->
+	<section id="sobre" class="alt">
+		<div class="container">
+			<p class="eyebrow" data-i18n="about.eyebrow">// sobre mim</p>
+			<h2 class="section-title reveal" data-i18n="about.title">Do backend ao app na mão do usuário.</h2>
+			<div class="about-grid">
+				<div class="reveal">
+					<p data-i18n="about.p1">Sou desenvolvedor desde 2018, com um carinho especial pelo <strong>backend</strong>. Trabalho principalmente com <strong>TypeScript, Node.js e NestJS</strong> no servidor, <strong>Flutter</strong> no mobile e <strong>React/Next.js</strong> na web, sempre com foco em código limpo, testes e arquitetura que aguenta crescer.</p>
+					<p data-i18n="about.p2">Como sócio da <strong>RBS Data</strong>, levo tecnologia ao setor público: plataformas de gestão urbana, sistemas de governo e soluções com inteligência artificial. Também liderei o desenvolvimento do <strong>CAF (Cadastro Nacional da Agricultura Familiar)</strong> no Ministério da Agricultura, atuando como Software Engineer Sênior na <strong>Global Hitss</strong>.</p>
+					<p data-i18n="about.p3">Tenho experiência sólida em <strong>migração de sistemas legados</strong>: dados entre bancos diferentes (MySQL, MongoDB, PostgreSQL) e arquivos de storage on-premise para a nuvem, sem perder integridade nem parar a operação. Hoje também aplico <strong>IA generativa</strong> (LLMs, RAG, OCR e agentes) para automatizar processos reais.</p>
+				</div>
+				<div class="highlights">
+					<div class="hl reveal">
+						<div class="ico"><svg><use href="#i-shield" /></svg></div>
+						<div>
+							<h4 data-i18n="hl.1.t">Sistemas de governo</h4>
+							<p data-i18n="hl.1.d">CAF e CECAF: alto volume, regras de negócio complexas e conformidade com a LGPD.</p>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-mobile"></i>
-								</span>
-								<div class="feature-copy">
-									<h3 data-i18n="services.mobile.title">Desenvolvimento Mobile</h3>
-									<p data-i18n="services.mobile.description">Desenvolvo apps para Android e IOS utilizando Flutter.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-browser"></i>
-								</span>
-								<div class="feature-copy">
-									<h3 data-i18n="services.web.title">Desenvolvimento Web</h3>
-									<p data-i18n="services.web.description">Desenvolvo sistemas para web utilizando Flutter, NodeJS, VueJS, entre outras
-										tecnologias.</p>
-								</div>
-							</div>
-
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-code"></i>
-								</span>
-								<div class="feature-copy">
-									<h3 data-i18n="services.api.title">Desenvolvimento de APIs</h3>
-									<p data-i18n="services.api.description">Desenvolvo APIs Rest utilizando NodeJS, TypeScript, JavaScript, entre outras
-										tecnologias.</p>
-								</div>
-							</div>
+					<div class="hl reveal">
+						<div class="ico"><svg><use href="#i-phone" /></svg></div>
+						<div>
+							<h4 data-i18n="hl.2.t">Apps publicados</h4>
+							<p data-i18n="hl.2.d">Flutter na Play Store e App Store, com pagamentos, câmera, push e integração nativa.</p>
 						</div>
 					</div>
-
-
-					<div class="row">
-						<div class="col-md-4 text-center">
-
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-android"></i>
-								</span>
-								<div class="feature-copy">
-									<h3 data-i18n="services.bots.title">Desenvolvimento de Bots</h3>
-									<p data-i18n="services.bots.description">Desenvolvo bots utilizando Python.</p>
-								</div>
-							</div>
-
+					<div class="hl reveal">
+						<div class="ico"><svg><use href="#i-cloud" /></svg></div>
+						<div>
+							<h4 data-i18n="hl.3.t">Cloud & DevOps</h4>
+							<p data-i18n="hl.3.d">Deploy em AWS (ECS, EC2, S3), Docker, CI/CD e servidores Linux próprios.</p>
 						</div>
-
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-network"></i>
-								</span>
-								<div class="feature-copy">
-									<h3 data-i18n="services.infrastructure.title">Infraestrutura</h3>
-									<p data-i18n="services.infrastructure.description">Atuo na área de infraestrutura relacionado a servidores, serviços, virtualização
-										e Docker.</p>
-								</div>
-							</div>
-
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="feature-left">
-								<span class="icon">
-									<i class="icon-chat"></i>
-								</span>
-								<div class="feature-copy">
-									<h3 data-i18n="services.support.title">Suporte</h3>
-									<p data-i18n="services.support.description">Atuo como suporte a sistemas e consultorias.</p>
-								</div>
-							</div>
+					</div>
+					<div class="hl reveal">
+						<div class="ico"><svg><use href="#i-cpu" /></svg></div>
+						<div>
+							<h4 data-i18n="hl.4.t">IA aplicada</h4>
+							<p data-i18n="hl.4.d">Assistentes, agentes, RAG sobre documentos e extração de dados com OCR.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</section>
 
-		<div id="fh5co-skills" class="animate-box">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2 data-i18n="skills.title">Skills</h2>
-					</div>
+	<!-- ================= SERVIÇOS ================= -->
+	<section id="servicos">
+		<div class="container">
+			<p class="eyebrow" data-i18n="services.eyebrow">// o que eu faço</p>
+			<h2 class="section-title reveal" data-i18n="services.title">Como posso ajudar seu projeto</h2>
+			<p class="section-sub reveal" data-i18n="services.sub">Da ideia ao deploy. Atendo empresas, startups e órgãos públicos, sozinho ou junto com o time da RBS Data.</p>
+			<div class="grid-3">
+				<div class="card reveal">
+					<div class="ico"><svg><use href="#i-server" /></svg></div>
+					<h3 data-i18n="svc.api.t">APIs e Backend</h3>
+					<p data-i18n="svc.api.d">APIs REST escaláveis em Node.js, NestJS e TypeScript, com autenticação JWT/OAuth, filas (RabbitMQ), cache (Redis) e documentação Swagger.</p>
 				</div>
-				<div class="row row-pb-md">
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="70"><span><strong>AWS</strong>70%</span></div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="100"><span><strong>Flutter</strong>100%</span></div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="85"><span><strong>Python</strong>85%</span></div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="100"><span><strong>NodeJS</strong>100%</span></div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="100"><span><strong>TypeScript</strong>100%</span></div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="100"><span><strong>JavaScript</strong>100%</span></div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="60"><span><strong>Devops</strong>60%</span></div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-						<div class="chart" data-percent="91"><span><strong>Git</strong>91%</span></div>
-					</div>
-
+				<div class="card reveal">
+					<div class="ico"><svg><use href="#i-phone" /></svg></div>
+					<h3 data-i18n="svc.mobile.t">Apps Mobile</h3>
+					<p data-i18n="svc.mobile.d">Apps Android e iOS em Flutter, do design à publicação nas lojas, com Firebase, pagamentos, notificações e recursos nativos.</p>
 				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="progress-wrap">
-							<h3><span class="name-left">AWS</span><span class="value-right">70%</span></h3>
-							<div class="progress">
-								<div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-									aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-								</div>
-							</div>
-						</div>
-						<div class="progress-wrap">
-							<h3><span class="name-left">Flutter</span><span class="value-right">100%</span></h3>
-							<div class="progress">
-								<div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
-									aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-								</div>
-							</div>
-						</div>
-						<div class="progress-wrap">
-							<h3><span class="name-left">Python</span><span class="value-right">85%</span></h3>
-							<div class="progress">
-								<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-									aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-								</div>
-							</div>
-						</div>
-						<div class="progress-wrap">
-							<h3><span class="name-left">NodeJS</span><span class="value-right">100%</span></h3>
-							<div class="progress">
-								<div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
-									aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="progress-wrap">
-							<h3><span class="name-left">TypeScript</span><span class="value-right">100%</span></h3>
-							<div class="progress">
-								<div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
-									aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-								</div>
-							</div>
-						</div>
-						<div class="progress-wrap">
-							<h3><span class="name-left">JavaScript</span><span class="value-right">100%</span></h3>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped active" role="progressbar"
-									aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-								</div>
-							</div>
-						</div>
-						<div class="progress-wrap">
-							<h3><span class="name-left">Devops</span><span class="value-right">60%</span></h3>
-							<div class="progress">
-								<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-									aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-								</div>
-							</div>
-						</div>
-						<div class="progress-wrap">
-							<h3><span class="name-left">Git</span><span class="value-right">91%</span></h3>
-							<div class="progress">
-								<div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-									aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" style="width:91%">
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="card reveal">
+					<div class="ico"><svg><use href="#i-layout" /></svg></div>
+					<h3 data-i18n="svc.web.t">Sistemas Web</h3>
+					<p data-i18n="svc.web.d">Painéis administrativos e portais em React, Next.js e Vue/Nuxt, integrados ao seu backend e prontos para produção.</p>
+				</div>
+				<div class="card reveal">
+					<div class="ico"><svg><use href="#i-cpu" /></svg></div>
+					<h3 data-i18n="svc.ai.t">Inteligência Artificial</h3>
+					<p data-i18n="svc.ai.d">Chatbots e agentes com LLMs (OpenAI, Claude), busca semântica (RAG) em documentos e extração automática de dados com OCR.</p>
+				</div>
+				<div class="card reveal">
+					<div class="ico"><svg><use href="#i-cloud" /></svg></div>
+					<h3 data-i18n="svc.cloud.t">Cloud e DevOps</h3>
+					<p data-i18n="svc.cloud.d">Infraestrutura na AWS, containers Docker, pipelines de CI/CD, monitoramento e servidores Linux.</p>
+				</div>
+				<div class="card reveal">
+					<div class="ico"><svg><use href="#i-refresh" /></svg></div>
+					<h3 data-i18n="svc.legacy.t">Modernização de Legados</h3>
+					<p data-i18n="svc.legacy.d">Migração de sistemas antigos, dados entre bancos e arquivos para a nuvem, com integridade e sem parar a operação.</p>
 				</div>
 			</div>
 		</div>
+	</section>
 
-		<div id="fh5co-started" class="fh5co-bg-dark">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2 data-i18n="contact.title">Contate-me!</h2>
-						<p data-i18n="contact.description">Caso você queira entrar em contato, basta clicar no botão abaixo para ser redirecionado para
-							a página de contato. Será um prazer poder ajudá-lo(a) da melhor forma possível!</p>
-						<p><a href="mailto:erick_vasconcelos_contato@outlook.com?subject=Olá Erick&body=Descreva aqui o que deseja falar comigo."
-								class="btn btn-default btn-lg" data-i18n="contact.button">Enviar e-mail</a></p>
+	<!-- ================= PROJETOS ================= -->
+	<section id="projetos" class="alt">
+		<div class="container">
+			<p class="eyebrow" data-i18n="projects.eyebrow">// projetos em destaque</p>
+			<h2 class="section-title reveal" data-i18n="projects.title">Trabalho real, em produção</h2>
+			<p class="section-sub reveal" data-i18n="projects.sub">Alguns dos sistemas que construí ou liderei.</p>
+			<div class="grid-2">
+				<article class="card project reveal">
+					<span class="tag-top" data-i18n="proj.caf.tag">Governo federal · Liderança técnica</span>
+					<h3 data-i18n="proj.caf.t">CAF · Ministério da Agricultura</h3>
+					<p data-i18n="proj.caf.d">Liderei o desenvolvimento do Cadastro Nacional da Agricultura Familiar: API, painel web e integrações com outros sistemas do governo, incluindo o CECAF (credenciamento de entidades emissoras), geração de documentos e rotinas agendadas.</p>
+					<div class="chips"><span class="chip">NestJS</span><span class="chip">TypeORM</span><span class="chip">PostgreSQL</span><span class="chip">React</span><span class="chip">AWS ECS</span><span class="chip">S3</span></div>
+				</article>
+				<article class="card project reveal">
+					<span class="tag-top" data-i18n="proj.moove.tag">RBS Data · Setor público</span>
+					<h3 data-i18n="proj.moove.t">Moove · a cidade em um mapa</h3>
+					<p data-i18n="proj.moove.d">Plataforma da RBS Data que reúne iluminação pública, água, frota, coleta de lixo e segurança em um único console, na web e no celular, com sensores e regras automáticas.</p>
+					<div class="chips"><span class="chip">Flutter</span><span class="chip">Node.js</span><span class="chip">RabbitMQ</span><span class="chip">Mapas</span><span class="chip">IoT</span></div>
+					<a class="link" href="https://rbsdata.com.br/#moove" target="_blank" rel="noopener"><span data-i18n="proj.more">Conhecer</span><svg width="16" height="16"><use href="#i-arrow" /></svg></a>
+				</article>
+				<article class="card project reveal">
+					<span class="tag-top" data-i18n="proj.wash.tag">Mobile · Produto</span>
+					<h3 data-i18n="proj.wash.t">WashPass & Wash Pet</h3>
+					<p data-i18n="proj.wash.d">Apps de assinatura e agendamento de serviços para Android, iOS e web. Cuidei do app Flutter e do backend Node.js: pagamentos, câmera, analytics e adequação às exigências da Play Store e App Store.</p>
+					<div class="chips"><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Node.js</span><span class="chip">Firebase</span><span class="chip">Kotlin/Swift</span></div>
+				</article>
+				<article class="card project reveal">
+					<span class="tag-top" data-i18n="proj.ai.tag">IA aplicada</span>
+					<h3 data-i18n="proj.ai.t">Agentes, RAG e OCR</h3>
+					<p data-i18n="proj.ai.d">Agentes que leem PDFs e respondem com base nos documentos (RAG), serviço de OCR para extrair dados de arquivos digitalizados e assistentes para atendimento ao cidadão.</p>
+					<div class="chips"><span class="chip">Python</span><span class="chip">LLMs</span><span class="chip">RAG</span><span class="chip">OCR</span><span class="chip">Ollama</span><span class="chip">Docker</span></div>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<!-- ================= SKILLS ================= -->
+	<section id="skills">
+		<div class="container">
+			<p class="eyebrow" data-i18n="skills.eyebrow">// stack</p>
+			<h2 class="section-title reveal" data-i18n="skills.title">Tecnologias que uso no dia a dia</h2>
+			<p class="section-sub reveal" data-i18n="skills.sub">As destacadas são as que mais uso em produção hoje.</p>
+			<div class="skills">
+				<div class="card skill-group reveal">
+					<h3><svg><use href="#i-server" /></svg>Backend</h3>
+					<div class="chips">
+						<span class="chip core">Node.js</span><span class="chip core">TypeScript</span><span class="chip core">NestJS</span>
+						<span class="chip">AdonisJS</span><span class="chip">Express</span><span class="chip core">TypeORM</span>
+						<span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">REST · Swagger</span>
+						<span class="chip">JWT · OAuth</span><span class="chip">RabbitMQ</span><span class="chip">Redis</span><span class="chip">Jest</span>
+					</div>
+				</div>
+				<div class="card skill-group reveal">
+					<h3><svg><use href="#i-phone" /></svg>Mobile</h3>
+					<div class="chips">
+						<span class="chip core">Flutter</span><span class="chip core">Dart</span><span class="chip">Bloc</span>
+						<span class="chip core">Firebase</span><span class="chip">Play Store</span><span class="chip">App Store</span>
+						<span class="chip">Kotlin</span><span class="chip">Swift</span><span class="chip">Flutter Web/Desktop</span>
+					</div>
+				</div>
+				<div class="card skill-group reveal">
+					<h3><svg><use href="#i-layout" /></svg>Frontend</h3>
+					<div class="chips">
+						<span class="chip core">React</span><span class="chip">Next.js</span><span class="chip">Vue.js</span>
+						<span class="chip">Nuxt.js</span><span class="chip">JavaScript</span><span class="chip">Tailwind CSS</span>
+						<span class="chip">HTML · CSS</span>
+					</div>
+				</div>
+				<div class="card skill-group reveal">
+					<h3><svg><use href="#i-db" /></svg><span data-i18n="skills.data">Bancos de dados</span></h3>
+					<div class="chips">
+						<span class="chip core">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">MongoDB</span>
+						<span class="chip">Redis</span><span class="chip">Firestore</span><span class="chip" data-i18n="skills.migration">Migração de dados</span>
+					</div>
+				</div>
+				<div class="card skill-group reveal">
+					<h3><svg><use href="#i-cloud" /></svg>Cloud & DevOps</h3>
+					<div class="chips">
+						<span class="chip core">AWS</span><span class="chip">ECS</span><span class="chip">EC2</span><span class="chip">S3</span>
+						<span class="chip core">Docker</span><span class="chip">GitHub Actions</span><span class="chip">Linux · Ubuntu</span>
+						<span class="chip">Nginx</span><span class="chip">Grafana</span><span class="chip">Git</span>
+					</div>
+				</div>
+				<div class="card skill-group reveal">
+					<h3><svg><use href="#i-cpu" /></svg><span data-i18n="skills.ai">Inteligência Artificial</span></h3>
+					<div class="chips">
+						<span class="chip core">LLMs</span><span class="chip">OpenAI</span><span class="chip">Claude</span>
+						<span class="chip core">RAG</span><span class="chip">OCR</span><span class="chip">Ollama</span>
+						<span class="chip" data-i18n="skills.agents">Agentes de IA</span><span class="chip">MCP</span><span class="chip">Claude Code</span>
 					</div>
 				</div>
 			</div>
+			<p class="legend"><span class="chip core" style="border-color:rgba(56,189,248,.5);background:var(--accent-soft)">&nbsp;</span><span data-i18n="skills.legend">uso principal</span></p>
 		</div>
+	</section>
 
-		<div id="fh5co-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<p>&copy; 2025 Erick Vasconcelos. Todos os direitos reservados.</p>
+	<!-- ================= EXPERIÊNCIA ================= -->
+	<section id="experiencia" class="alt">
+		<div class="container">
+			<p class="eyebrow" data-i18n="exp.eyebrow">// trajetória</p>
+			<h2 class="section-title reveal" data-i18n="exp.title">Experiência</h2>
+			<p class="section-sub reveal" data-i18n="exp.sub">Comecei no suporte e na infraestrutura, e isso me ajuda até hoje a pensar o software de ponta a ponta.</p>
+
+			<ul class="timeline">
+				<li class="tl-item current reveal">
+					<div class="tl-head">
+						<h3 data-i18n="exp.rbs.t">Sócio · Engenharia de Software</h3>
+						<span class="tl-date" data-i18n="exp.now">Atual</span>
 					</div>
+					<div class="tl-company"><a href="https://rbsdata.com.br/" target="_blank" rel="noopener">RBS Data</a></div>
+					<p data-i18n="exp.rbs.d">Responsável pela engenharia de software da empresa, focada em tecnologia para o setor público: a plataforma Moove (gestão urbana), software sob medida, portais ao cidadão e soluções com IA. Parceira oficial AWS, OpenAI e Anthropic.</p>
+					<div class="chips"><span class="chip">NestJS</span><span class="chip">Flutter</span><span class="chip">Next.js</span><span class="chip">AWS</span><span class="chip">IA</span></div>
+				</li>
+				<li class="tl-item current reveal">
+					<div class="tl-head">
+						<h3>Software Engineer Sênior</h3>
+						<span class="tl-date" data-i18n="exp.hitss.date">2023 · Atual</span>
+					</div>
+					<div class="tl-company">Global Hitss</div>
+					<p data-i18n="exp.hitss.d">Engenheiro full-stack em projetos do Governo Federal. Liderei o desenvolvimento do CAF no Ministério da Agricultura e seus sistemas relacionados (CECAF e rotinas agendadas), com deploy na AWS.</p>
+					<div class="chips"><span class="chip">Node.js</span><span class="chip">NestJS</span><span class="chip">TypeORM</span><span class="chip">PostgreSQL</span><span class="chip">React</span><span class="chip">AWS ECS</span></div>
+				</li>
+				<li class="tl-item current reveal">
+					<div class="tl-head">
+						<h3 data-i18n="exp.wash.t">Desenvolvedor Mobile Sênior</h3>
+						<span class="tl-date" data-i18n="exp.wash.date">2023 · Atual</span>
+					</div>
+					<div class="tl-company">WashPass</div>
+					<p data-i18n="exp.wash.d">Desenvolvimento dos apps Android, iOS e web em Flutter e do backend em Node.js: pagamentos, analytics, câmera e publicação nas lojas.</p>
+					<div class="chips"><span class="chip">Flutter</span><span class="chip">Node.js</span><span class="chip">Firebase</span></div>
+				</li>
+				<li class="tl-item reveal">
+					<div class="tl-head">
+						<h3 data-i18n="exp.ct2.t">Desenvolvedor de Sistemas e Gestor de TI</h3>
+						<span class="tl-date">2022 · 2023</span>
+					</div>
+					<div class="tl-company">Cunha & Tavares Contabilidade S/S</div>
+					<p data-i18n="exp.ct2.d">Além do desenvolvimento, assumi a gestão de TI: infraestrutura, servidores e decisões de tecnologia da empresa.</p>
+				</li>
+				<li class="tl-item reveal">
+					<div class="tl-head">
+						<h3 data-i18n="exp.ct1.t">Desenvolvedor de Sistemas</h3>
+						<span class="tl-date">2019 · 2022</span>
+					</div>
+					<div class="tl-company">Cunha & Tavares Contabilidade S/S</div>
+					<p data-i18n="exp.ct1.d">Sistemas internos e apps com ReactJS, Node.js, AdonisJS, VueJS e Flutter, usando Docker, Git e MySQL.</p>
+					<div class="chips"><span class="chip">React</span><span class="chip">AdonisJS</span><span class="chip">VueJS</span><span class="chip">Flutter</span><span class="chip">MySQL</span><span class="chip">Docker</span></div>
+				</li>
+				<li class="tl-item reveal">
+					<div class="tl-head">
+						<h3 data-i18n="exp.ct0.t">Estagiário de TI</h3>
+						<span class="tl-date">2019</span>
+					</div>
+					<div class="tl-company">Cunha & Tavares Contabilidade S/S</div>
+					<p data-i18n="exp.ct0.d">Desenvolvimento, infraestrutura e suporte.</p>
+				</li>
+				<li class="tl-item reveal">
+					<div class="tl-head">
+						<h3 data-i18n="exp.seed.t">Estagiário</h3>
+						<span class="tl-date">2018</span>
+					</div>
+					<div class="tl-company" data-i18n="exp.seed.c">SEED · Secretaria de Estado da Educação do Amapá</div>
+					<p data-i18n="exp.seed.d">Estágio voluntário em TI.</p>
+				</li>
+			</ul>
+
+			<h3 class="section-title reveal" style="font-size:26px;margin-top:40px" data-i18n="edu.title">Formação</h3>
+			<div class="edu">
+				<div class="card reveal">
+					<span class="tl-date">2020</span>
+					<h3 data-i18n="edu.1.t">Pós-graduação em Docência do Ensino Superior</h3>
+					<p>Faculdade de Tecnologia do Amapá (META)</p>
+				</div>
+				<div class="card reveal">
+					<span class="tl-date">2017 · 2019</span>
+					<h3 data-i18n="edu.2.t">Tecnologia em Redes de Computadores</h3>
+					<p>Faculdade de Tecnologia do Amapá (META)</p>
+				</div>
+				<div class="card reveal">
+					<span class="tl-date">2016</span>
+					<h3 data-i18n="edu.3.t">Aprendizagem Industrial em Redes de Computadores</h3>
+					<p>SENAI · AP</p>
 				</div>
 			</div>
 		</div>
+	</section>
 
-		<div class="gototop js-top">
-			<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	<!-- ================= CONTATO ================= -->
+	<section id="contato">
+		<div class="container">
+			<div class="contact-box reveal">
+				<h2 data-i18n="contact.title">Vamos construir algo juntos?</h2>
+				<p data-i18n="contact.d">Tem uma vaga, um projeto ou uma ideia? Me mande uma mensagem. Respondo rápido e a primeira conversa é sem compromisso.</p>
+				<div class="hero-cta">
+					<a class="btn btn-primary" href="mailto:erick_vasconcelos_contato@outlook.com?subject=Ol%C3%A1%20Erick"><svg><use href="#i-mail" /></svg><span data-i18n="contact.email">Enviar e-mail</span></a>
+					<a class="btn btn-ghost" href="https://www.linkedin.com/in/erick-vasconcelos-50baa8150/" target="_blank" rel="noopener"><svg><use href="#i-linkedin" /></svg>LinkedIn</a>
+					<a class="btn btn-ghost" href="https://github.com/erickximenes" target="_blank" rel="noopener"><svg><use href="#i-github" /></svg>GitHub</a>
+				</div>
+			</div>
 		</div>
+	</section>
 
-		<!-- jQuery -->
-		<script src="js/jquery.min.js"></script>
-		<!-- jQuery Easing -->
-		<script src="js/jquery.easing.1.3.js"></script>
-		<!-- Bootstrap -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- Waypoints -->
-		<script src="js/jquery.waypoints.min.js"></script>
-		<!-- Stellar Parallax -->
-		<script src="js/jquery.stellar.min.js"></script>
-		<!-- Easy PieChart -->
-		<script src="js/jquery.easypiechart.min.js"></script>
+	<footer>
+		<div class="container">
+			<span>&copy; <span id="year">2026</span> Erick Ximenes Vasconcelos</span>
+			<span class="mono" data-i18n="footer.made">Feito com HTML, CSS e café ☕</span>
+		</div>
+	</footer>
 
-	<!-- Main -->
-	<script src="js/main.js"></script>
-
-	<!-- Internationalization Script -->
 	<script>
-		// Translation object
-		const translations = {
-			pt: {
-				'header.title': 'Dev. Mobile / Dev. Full-Stack',
-				'about.title': 'Sobre mim',
-				'about.name': 'Nome:',
-				'about.email': 'Email:',
-				'about.website': 'Website:',
-				'about.hello': 'Hello There!',
-				'about.description1': 'Desenvolvedor Full Stack especializado em Node.js e Flutter, com uma paixão particular pelo backend. Com uma sólida formação em TypeScript, JavaScript e Python, sou comprometido com a entrega de soluções de alta qualidade, seguindo as melhores práticas de desenvolvimento, como TDD e clean code. Possuo experiência significativa em frameworks como AdonisJS e NuxtJS, o que me permite criar sistemas web escaláveis e eficientes. Além disso, como desenvolvedor mobile em Flutter, tenho experiência em criar aplicativos elegantes e funcionais. Meu conhecimento abrange diversos bancos de dados, incluindo MySQL, MongoDB e PostgreSQL, e sou capaz de integrar essas tecnologias de forma eficaz em meus projetos.',
-				'about.description2': 'Tenho experiência consolidada em migração de sistemas legados para novas plataformas, incluindo migração de dados entre diferentes bancos de dados (MySQL, MongoDB, PostgreSQL) e transferência de arquivos entre sistemas de armazenamento distintos, como storage on-premise para nuvem. Essa expertise me permite modernizar aplicações antigas, garantindo integridade dos dados e continuidade operacional durante o processo de transição.',
-				'about.description3': 'Trabalho com serviços em nuvem, como Firebase e AWS, para fornecer soluções modernas e escaláveis. Sempre em busca de desafios estimulantes e oportunidades para continuar crescendo como desenvolvedor Full Stack. Let\'s code!',
-				'resume.title': 'Meu Resumo',
-				'resume.work_experience': 'Experiência de trabalho',
-				'resume.education': 'Educação',
-				'work.internship.description': 'Estágio voluntário na Secretaria de Estado da Educação do Amapá.',
-				'work.it_intern.description': 'Exercendo as funções de desenvolvedor, infra e suporte.',
-				'work.systems_developer.description': 'Exerço o papel de desenvolvedor de sistemas, trabalhando com tecnologias JS (ReactJS, NodeJS, AdonisJS e VueJS), desenvolvimento mobile usando Flutter e implementando Docker, Git, MySQL, entre outros.',
-				'work.systems_manager.description': 'Exerço o papel de desenvolvedor de sistemas e também como gestor de T.I, trabalhando com tecnologias JS (ReactJS, NodeJS, AdonisJS e VueJS), desenvolvimento mobile usando Flutter e implementando Docker, Git, MySQL, entre outros.',
-				'work.mobile_senior.description': 'Atuo como desenvolvedor mobile Android/IOS/Web utilizando Flutter e desenvolvedor Full-Stack utilizando NodeJS.',
-				'work.software_engineer.description': 'Exerci a função de Software Engineer FullStack em NodeJS.',
-				'education.higher_education.description': 'O curso capacite o profissional a ser especialista na prática: professor, aluno e a aprendizagem do século 21, a partir de reflexões sobre experiências profissionais, da pesquisa e do exercício crítico de elaboração de um plano de trabalho docente adequado às exigências do ensino superior contemporâneo.',
-				'education.computer_networks.description': 'O curso capacita o profissional a ser especialista em projetar, configurar, fazer a manutenção, gerenciar e cuidar da segurança de redes de computadores e infraestruturas de Tecnologia da Informação (TI).',
-				'education.industrial_learning.description': 'Habilitar profissionais para implementar e manter infraestrutura, equipamentos de acesso, sistemas operacionais e serviços de redes, aplicando normas de segurança de rede e padrões técnicos, de acordo com normas de qualidade, de saúde e segurança do trabalho e preservação ambiental.',
-				'services.title': 'Meus serviços',
-				'services.mobile.title': 'Desenvolvimento Mobile',
-				'services.mobile.description': 'Desenvolvo apps para Android e IOS utilizando Flutter.',
-				'services.web.title': 'Desenvolvimento Web',
-				'services.web.description': 'Desenvolvo sistemas para web utilizando Flutter, NodeJS, VueJS, entre outras tecnologias.',
-				'services.api.title': 'Desenvolvimento de APIs',
-				'services.api.description': 'Desenvolvo APIs Rest utilizando NodeJS, TypeScript, JavaScript, entre outras tecnologias.',
-				'services.bots.title': 'Desenvolvimento de Bots',
-				'services.bots.description': 'Desenvolvo bots utilizando Python.',
-				'services.infrastructure.title': 'Infraestrutura',
-				'services.infrastructure.description': 'Atuo na área de infraestrutura relacionado a servidores, serviços, virtualização e Docker.',
-				'services.support.title': 'Suporte',
-				'services.support.description': 'Atuo como suporte a sistemas e consultorias.',
-				'skills.title': 'Skills',
-				'contact.title': 'Contate-me!',
-				'contact.description': 'Caso você queira entrar em contato, basta clicar no botão abaixo para ser redirecionado para a página de contato. Será um prazer poder ajudá-lo(a) da melhor forma possível!',
-				'contact.button': 'Enviar e-mail'
-			},
-			en: {
-				'header.title': 'Mobile Dev / Full-Stack Dev',
-				'about.title': 'About me',
-				'about.name': 'Name:',
-				'about.email': 'Email:',
-				'about.website': 'Website:',
-				'about.hello': 'Hello There!',
-				'about.description1': 'Full Stack Developer specialized in Node.js and Flutter, with a particular passion for backend development. With solid training in TypeScript, JavaScript and Python, I am committed to delivering high-quality solutions, following development best practices such as TDD and clean code. I have significant experience in frameworks like AdonisJS and NuxtJS, which allows me to create scalable and efficient web systems. Additionally, as a mobile developer in Flutter, I have experience creating elegant and functional applications. My knowledge spans various databases, including MySQL, MongoDB and PostgreSQL, and I am able to integrate these technologies effectively in my projects.',
-				'about.description2': 'I have consolidated experience in migrating legacy systems to new platforms, including data migration between different databases (MySQL, MongoDB, PostgreSQL) and file transfer between distinct storage systems, such as on-premise storage to cloud. This expertise allows me to modernize old applications, ensuring data integrity and operational continuity during the transition process.',
-				'about.description3': 'I work with cloud services like Firebase and AWS to provide modern and scalable solutions. Always looking for stimulating challenges and opportunities to continue growing as a Full Stack developer. Let\'s code!',
-				'resume.title': 'My Resume',
-				'resume.work_experience': 'Work experience',
-				'resume.education': 'Education',
-				'work.internship.description': 'Volunteer internship at the State Department of Education of Amapá.',
-				'work.it_intern.description': 'Performing functions as developer, infrastructure and support.',
-				'work.systems_developer.description': 'I play the role of systems developer, working with JS technologies (ReactJS, NodeJS, AdonisJS and VueJS), mobile development using Flutter and implementing Docker, Git, MySQL, among others.',
-				'work.systems_manager.description': 'I play the role of systems developer and also as IT manager, working with JS technologies (ReactJS, NodeJS, AdonisJS and VueJS), mobile development using Flutter and implementing Docker, Git, MySQL, among others.',
-				'work.mobile_senior.description': 'I work as an Android/iOS/Web mobile developer using Flutter and Full-Stack developer using NodeJS.',
-				'work.software_engineer.description': 'I performed the role of FullStack Software Engineer in NodeJS.',
-				'education.higher_education.description': 'The course enables the professional to be a specialist in practice: teacher, student and 21st century learning, based on reflections on professional experiences, research and critical exercise of developing a teaching work plan adequate to the demands of contemporary higher education.',
-				'education.computer_networks.description': 'The course enables the professional to be a specialist in designing, configuring, maintaining, managing and taking care of the security of computer networks and Information Technology (IT) infrastructures.',
-				'education.industrial_learning.description': 'Enable professionals to implement and maintain infrastructure, access equipment, operating systems and network services, applying network security standards and technical standards, in accordance with quality, health and safety at work and environmental preservation standards.',
-				'services.title': 'My services',
-				'services.mobile.title': 'Mobile Development',
-				'services.mobile.description': 'I develop apps for Android and iOS using Flutter.',
-				'services.web.title': 'Web Development',
-				'services.web.description': 'I develop web systems using Flutter, NodeJS, VueJS, among other technologies.',
-				'services.api.title': 'API Development',
-				'services.api.description': 'I develop REST APIs using NodeJS, TypeScript, JavaScript, among other technologies.',
-				'services.bots.title': 'Bot Development',
-				'services.bots.description': 'I develop bots using Python.',
-				'services.infrastructure.title': 'Infrastructure',
-				'services.infrastructure.description': 'I work in the infrastructure area related to servers, services, virtualization and Docker.',
-				'services.support.title': 'Support',
-				'services.support.description': 'I work as systems support and consulting.',
-				'skills.title': 'Skills',
-				'contact.title': 'Contact me!',
-				'contact.description': 'If you want to get in touch, just click the button below to be redirected to the contact page. It will be a pleasure to help you in the best way possible!',
-				'contact.button': 'Send email'
-			}
+		const en = {
+			'nav.about': 'About', 'nav.services': 'Services', 'nav.projects': 'Projects', 'nav.skills': 'Skills', 'nav.experience': 'Experience', 'nav.contact': 'Contact me',
+			'hero.badge': 'Open to new projects and opportunities',
+			'hero.hi': "Hi, I'm Erick.",
+			'hero.title': 'I build software that runs in production.',
+			'hero.lead': 'Full-stack and mobile software engineer, partner at <strong>RBS Data</strong>. I led the development of <strong>CAF at Brazil\'s Ministry of Agriculture</strong> and deliver systems end to end: Node.js/NestJS APIs, Flutter apps published on the stores, AWS infrastructure and applied AI.',
+			'hero.cta1': "Let's talk", 'hero.cta2': 'See projects',
+			'card.role': 'Software Engineer · Full-Stack & Mobile',
+			'card.company': 'Partner · Software Engineering at <a href="https://rbsdata.com.br/" target="_blank" rel="noopener"><strong>RBS Data</strong></a>',
+			'card.location': 'Macapá, AP · Brazil (remote)',
+			'stats.years': 'years building software', 'stats.gov': 'federal government systems in production', 'stats.apps': 'apps published on the stores', 'stats.partners': 'RBS Data: AWS, OpenAI and Anthropic partner',
+			'about.eyebrow': '// about me',
+			'about.title': "From the backend to the app in the user's hand.",
+			'about.p1': "I've been a developer since 2018, with a soft spot for the <strong>backend</strong>. I mainly work with <strong>TypeScript, Node.js and NestJS</strong> on the server, <strong>Flutter</strong> on mobile and <strong>React/Next.js</strong> on the web, always focused on clean code, tests and architecture that can grow.",
+			'about.p2': "As a partner at <strong>RBS Data</strong>, I bring technology to the public sector: urban management platforms, government systems and AI solutions. I also led the development of <strong>CAF (National Family Farming Registry)</strong> at Brazil's Ministry of Agriculture, as a Senior Software Engineer at <strong>Global Hitss</strong>.",
+			'about.p3': "I have solid experience in <strong>legacy system migration</strong>: data between different databases (MySQL, MongoDB, PostgreSQL) and files from on-premise storage to the cloud, without losing integrity or stopping operations. I also apply <strong>generative AI</strong> (LLMs, RAG, OCR and agents) to automate real processes.",
+			'hl.1.t': 'Government systems', 'hl.1.d': 'CAF and CECAF: high volume, complex business rules and LGPD compliance.',
+			'hl.2.t': 'Published apps', 'hl.2.d': 'Flutter on Play Store and App Store, with payments, camera, push and native integration.',
+			'hl.3.t': 'Cloud & DevOps', 'hl.3.d': 'Deploys on AWS (ECS, EC2, S3), Docker, CI/CD and self-managed Linux servers.',
+			'hl.4.t': 'Applied AI', 'hl.4.d': 'Assistants, agents, RAG over documents and data extraction with OCR.',
+			'services.eyebrow': '// what I do', 'services.title': 'How I can help your project',
+			'services.sub': 'From idea to deploy. I work with companies, startups and public agencies, on my own or with the RBS Data team.',
+			'svc.api.t': 'APIs & Backend', 'svc.api.d': 'Scalable REST APIs in Node.js, NestJS and TypeScript, with JWT/OAuth auth, queues (RabbitMQ), caching (Redis) and Swagger docs.',
+			'svc.mobile.t': 'Mobile Apps', 'svc.mobile.d': 'Android and iOS apps in Flutter, from design to store release, with Firebase, payments, notifications and native features.',
+			'svc.web.t': 'Web Systems', 'svc.web.d': 'Admin dashboards and portals in React, Next.js and Vue/Nuxt, integrated with your backend and production-ready.',
+			'svc.ai.t': 'Artificial Intelligence', 'svc.ai.d': 'Chatbots and agents with LLMs (OpenAI, Claude), semantic search (RAG) over documents and automatic data extraction with OCR.',
+			'svc.cloud.t': 'Cloud & DevOps', 'svc.cloud.d': 'AWS infrastructure, Docker containers, CI/CD pipelines, monitoring and Linux servers.',
+			'svc.legacy.t': 'Legacy Modernization', 'svc.legacy.d': 'Migration of old systems, data between databases and files to the cloud, keeping integrity and without downtime.',
+			'projects.eyebrow': '// featured projects', 'projects.title': 'Real work, in production', 'projects.sub': 'Some of the systems I built or led.',
+			'proj.caf.tag': 'Federal government · Tech lead', 'proj.caf.t': 'CAF · Ministry of Agriculture',
+			'proj.caf.d': 'I led the development of the National Family Farming Registry: API, web dashboard and integrations with other government systems, including CECAF (issuing entity accreditation), document generation and scheduled jobs.',
+			'proj.moove.tag': 'RBS Data · Public sector', 'proj.moove.t': 'Moove · the whole city on one map',
+			'proj.moove.d': "RBS Data's platform that brings street lighting, water, fleet, garbage collection and security together in a single console, on web and mobile, with sensors and automatic rules.",
+			'proj.wash.tag': 'Mobile · Product', 'proj.wash.t': 'WashPass & Wash Pet',
+			'proj.wash.d': 'Subscription and booking apps for Android, iOS and web. I handled the Flutter app and the Node.js backend: payments, camera, analytics and compliance with Play Store and App Store requirements.',
+			'proj.ai.tag': 'Applied AI', 'proj.ai.t': 'Agents, RAG and OCR',
+			'proj.ai.d': 'Agents that read PDFs and answer based on the documents (RAG), an OCR service to extract data from scanned files and assistants for citizen services.',
+			'proj.more': 'Learn more',
+			'skills.eyebrow': '// stack', 'skills.title': 'Technologies I use every day', 'skills.sub': 'Highlighted ones are what I use most in production today.',
+			'skills.data': 'Databases', 'skills.migration': 'Data migration', 'skills.ai': 'Artificial Intelligence', 'skills.agents': 'AI agents', 'skills.legend': 'main stack',
+			'exp.eyebrow': '// journey', 'exp.title': 'Experience', 'exp.sub': 'I started in support and infrastructure, and that still helps me think about software end to end.',
+			'exp.now': 'Present',
+			'exp.rbs.t': 'Partner · Software Engineering',
+			'exp.rbs.d': 'In charge of software engineering at the company, focused on technology for the public sector: the Moove platform (urban management), custom software, citizen portals and AI solutions. Official AWS, OpenAI and Anthropic partner.',
+			'exp.hitss.date': '2023 · Present',
+			'exp.hitss.d': 'Full-stack engineer on Federal Government projects. I led the development of CAF at the Ministry of Agriculture and related systems (CECAF and scheduled jobs), deployed on AWS.',
+			'exp.wash.t': 'Senior Mobile Developer', 'exp.wash.date': '2023 · Present',
+			'exp.wash.d': 'Development of the Android, iOS and web apps in Flutter and the Node.js backend: payments, analytics, camera and store releases.',
+			'exp.ct2.t': 'Systems Developer & IT Manager', 'exp.ct2.d': 'Besides development, I took over IT management: infrastructure, servers and technology decisions for the company.',
+			'exp.ct1.t': 'Systems Developer', 'exp.ct1.d': 'Internal systems and apps with ReactJS, Node.js, AdonisJS, VueJS and Flutter, using Docker, Git and MySQL.',
+			'exp.ct0.t': 'IT Intern', 'exp.ct0.d': 'Development, infrastructure and support.',
+			'exp.seed.t': 'Intern', 'exp.seed.c': 'SEED · Amapá State Department of Education', 'exp.seed.d': 'Volunteer IT internship.',
+			'edu.title': 'Education',
+			'edu.1.t': 'Postgraduate in Higher Education Teaching', 'edu.2.t': 'Associate Degree in Computer Networks', 'edu.3.t': 'Industrial Apprenticeship in Computer Networks',
+			'contact.title': "Let's build something together?",
+			'contact.d': "Have a job opening, a project or an idea? Send me a message. I reply fast and the first conversation is free of commitment.",
+			'contact.email': 'Send email',
+			'footer.made': 'Made with HTML, CSS and coffee ☕'
 		};
 
-		let currentLang = 'pt';
+		const nodes = document.querySelectorAll('[data-i18n]');
+		const pt = {};
+		nodes.forEach(el => { pt[el.dataset.i18n] = el.innerHTML; });
 
-		function toggleLanguage() {
-			currentLang = currentLang === 'pt' ? 'en' : 'pt';
-			updateLanguage();
-		}
+		let lang = 'pt';
+		try {
+			const saved = localStorage.getItem('lang');
+			if (saved === 'en' || saved === 'pt') lang = saved;
+			else if ((navigator.language || '').toLowerCase().startsWith('en')) lang = 'en';
+		} catch (e) { }
 
-		function updateLanguage() {
-			const langBtn = document.getElementById('language-text');
-			langBtn.textContent = currentLang === 'pt' ? 'EN' : 'PT';
-
-			// Update all elements with data-i18n attribute
-			const elements = document.querySelectorAll('[data-i18n]');
-			elements.forEach(element => {
-				const key = element.getAttribute('data-i18n');
-				if (translations[currentLang][key]) {
-					element.textContent = translations[currentLang][key];
-				}
+		function apply() {
+			const dict = lang === 'en' ? en : pt;
+			nodes.forEach(el => {
+				const v = dict[el.dataset.i18n];
+				if (v !== undefined) el.innerHTML = v;
 			});
-
-			// Update page language attribute
-			document.documentElement.lang = currentLang;
+			document.documentElement.lang = lang === 'en' ? 'en' : 'pt-BR';
+			document.getElementById('lang-btn').textContent = lang === 'en' ? 'PT' : 'EN';
+			try { localStorage.setItem('lang', lang); } catch (e) { }
 		}
 
-		// Initialize on page load
-		document.addEventListener('DOMContentLoaded', function() {
-			updateLanguage();
+		document.getElementById('lang-btn').addEventListener('click', () => {
+			lang = lang === 'pt' ? 'en' : 'pt';
+			apply();
 		});
-	</script>
+		apply();
 
-</body></html>
+		document.getElementById('year').textContent = new Date().getFullYear();
+
+		const nav = document.getElementById('nav');
+		const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 10);
+		window.addEventListener('scroll', onScroll, { passive: true });
+		onScroll();
+
+		if ('IntersectionObserver' in window) {
+			const io = new IntersectionObserver(entries => {
+				entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+			}, { threshold: 0.12 });
+			document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+		} else {
+			document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+		}
+	</script>
+</body>
+
+</html>

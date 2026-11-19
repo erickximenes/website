@@ -1,46 +1,58 @@
 <div id="inicio"></div>
-<h1 align="center"> 
-	🚀  website 🚀
-</h1>
+<h1 align="center">🚀 website · Erick Ximenes Vasconcelos</h1>
 
-> Projeto que utiliza HTML, CSS e Javascript para criar um website de perfil profissional simples. O Website é "hospedado" no próprio GitHub, basta seguir os passos para realizar as configurações necessárias.
+<p align="center">
+  <a href="https://erickximenes.github.io/website"><b>erickximenes.github.io/website</b></a>
+</p>
 
-## 💻 Pré-requisitos
+> Meu portfólio profissional: quem sou, serviços, projetos, stack e experiência. É uma página única em HTML, CSS e JavaScript puros, sem build, hospedada no GitHub Pages.
 
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
-* Saber o básico de HTML
-* Ter um conta no GitHub
-* Criar um fork ou repository para armazenar os arquivos do projeto.
+## ✨ O que tem no site
 
-## 🚀 Configurando website
+- Visual escuro e responsivo (celular, tablet e desktop)
+- Português e inglês, com troca por botão (a escolha fica salva no navegador)
+- Seções: Sobre, Serviços, Projetos em destaque, Skills, Experiência, Formação e Contato
+- SEO: meta tags, Open Graph e dados estruturados (`schema.org/Person`)
+- Sem dependências: os ícones são SVG inline e as fontes vêm do Google Fonts
 
-Com o fork ou repositório com os arquivos criado, vá na guia `Settings` do repositório, no menu lateral clique na opção `Pages` e verifique se está com a seguinte configuração.
+## 🗂️ Estrutura
 
-![My Image](images/config.png)
+```
+index.html        # página completa (HTML + CSS + JS)
+images/user-3.jpg # foto de perfil
+images/icon.ico   # favicon
+```
 
+Os textos em inglês ficam no objeto `en` no fim do `index.html`. Para editar um texto, altere o HTML (português) e a chave correspondente em `en` (o atributo `data-i18n` liga os dois).
 
-## ☕ Usando website
+## 💻 Rodando localmente
 
-Para utilizar basta acessar o seguinte link alterando com o seu nome de usuário do GitHub e o nome do seu repositório. `https://{nome_usuario}.github.io/{nome_repositoio}`. Exemplo `erickximenes.github.io/website`.
+Basta abrir o `index.html` no navegador ou subir um servidor estático:
 
+```bash
+npx serve .
+```
 
-## 🤝 Colaborador
+## 🚀 Publicando no GitHub Pages
 
-Agradecemos à seguinte pessoa que contribuiu para este projeto:
+No repositório, vá em `Settings` → `Pages` e use a branch `main`, pasta `/ (root)`:
+
+![Configuração do GitHub Pages](images/config.png)
+
+O site fica disponível em `https://{usuario}.github.io/{repositorio}`, por exemplo `erickximenes.github.io/website`.
+
+## 🤝 Autor
 
 <table>
   <tr>
     <td align="center">
       <a href="https://www.linkedin.com/in/erick-vasconcelos-50baa8150/" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/67069017?v=4" width="100px;" alt="Foto do Erick no GitHub"/><br>
-        <sub>
-          <b>Erick Vasconcelos</b>
-        </sub><br>
-        <a href="https://www.buymeacoffee.com/erickzaunlab" target="_blank"><img src="https://raw.githubusercontent.com/appcraftstudio/buymeacoffee/master/Images/snapshot-bmc-button.png" width="100px;"></a>
-      </a>
+        <sub><b>Erick Ximenes Vasconcelos</b></sub>
+      </a><br>
+      <a href="https://www.buymeacoffee.com/erickzaunlab" target="_blank"><img src="https://raw.githubusercontent.com/appcraftstudio/buymeacoffee/master/Images/snapshot-bmc-button.png" width="100px;"></a>
     </td>
   </tr>
 </table>
 
-
-[⬆ Voltar ao topo](#inicio)<br>
+[⬆ Voltar ao topo](#inicio)
