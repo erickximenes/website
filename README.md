@@ -18,9 +18,11 @@
 ## 🗂️ Estrutura
 
 ```
-index.html        # página completa (HTML + CSS + JS)
-images/user-3.jpg # foto de perfil
-images/icon.ico   # favicon
+index.html                   # página completa (HTML + CSS + JS)
+images/user-3.jpg            # foto de perfil
+images/og-image.jpg          # prévia ao compartilhar o link (1200x630)
+images/favicon.svg           # favicon (fonte); .ico, icon-192 e apple-touch-icon derivam dele
+images/config.png            # print usado neste README
 ```
 
 Os textos em inglês ficam no objeto `en` no fim do `index.html`. Para editar um texto, altere o HTML (português) e a chave correspondente em `en` (o atributo `data-i18n` liga os dois).
